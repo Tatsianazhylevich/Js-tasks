@@ -1,0 +1,35 @@
+{
+    "name": "js-problems",
+    "version": "0.1.0",
+    "private": true,
+    "description": "",
+    "homepage": "https://github.com/mbelsky/js-problems#readme",
+    "bugs": {
+        "url": "https://github.com/mbelsky/js-problems/issues"
+    },
+    "author": "Maxim Belsky <public.belsky@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbelsky/js-problems.git"
+    },
+    "scripts": {
+        "test": "jest -o",
+        "test:watch": "jest --watch"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged --relative"
+        }
+    },
+    "lint-staged": {
+        "*.js": [
+            "jest --bail --findRelatedTests"
+        ]
+    },
+    "devDependencies": {
+        "husky": "^2.7.0",
+        "jest": "^26.1.0",
+        "lint-staged": "^9.5.0"
+    }
+}
