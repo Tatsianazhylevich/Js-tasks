@@ -14,7 +14,9 @@
  * @returns {boolean}
  */
 function checkTicket(number) {
-    return undefined;
+    let sum1 = (+number[0]) + (+number[1]) + (+number[2]);
+    let sum2 = (+number[3]) + (+number[4]) + (+number[5]);
+    return (sum1===sum2)?true:false;
 }
 
 module.exports = checkTicket;
